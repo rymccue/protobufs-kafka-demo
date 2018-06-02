@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package analytics;
+
+message AdditionAnalytics {
+    repeated int32 numbers = 1;
+    int64 time = 2;
+}
