@@ -12,6 +12,8 @@ ADD . /go/src/app/
 
 WORKDIR /go/src/app
 
+run go get github.com/rymccue/protobufs-kafka-demo
+
 RUN go get github.com/golang/protobuf/proto
 
 RUN go get github.com/Shopify/sarama

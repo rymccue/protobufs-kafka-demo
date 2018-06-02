@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/Shopify/sarama"
 	"fmt"
-	"github.com/rymccue/grpc-kafka-example/pb"
+	"github.com/rymccue/protobufs-kafka-demo/pb"
 	"net/http"
 	"github.com/golang/protobuf/proto"
 	"encoding/json"
@@ -51,4 +51,6 @@ func main() {
 			w.WriteHeader(http.StatusInternalServerError)
 		}
 	}
+
+	http.ListenAndServe(":8080", nil)
 }

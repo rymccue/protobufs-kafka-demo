@@ -7,7 +7,7 @@ import (
 
 	"github.com/Shopify/sarama"
 	"github.com/golang/protobuf/proto"
-	"github.com/rymccue/grpc-kafka-example/pb"
+	"github.com/rymccue/protobufs-kafka-demo/pb"
 	"time"
 )
 
